@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+.main-container {
+  margin: 50px 15px;
+}
+
+h1 {
+  background-color: #C52F24;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  width:auto;
+}
+
+li {
+  list-style: none;
+}
+
+.maru {
+  text-align: center;
+}
