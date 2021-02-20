@@ -43,3 +43,16 @@ li {
 .maru {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+.link{
+ margin-bottom:  2px;
+ margin-top: 2px;
+}
+
+.link + .link {
+  margin-top: 5px;
+}

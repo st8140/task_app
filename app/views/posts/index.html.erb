@@ -25,8 +25,8 @@
         <tr>
           <td><%= post.id %></td>
           <td><%= post.post_title %></td>
-          <td><%= post.start_at %></td>
-          <td><%= post.end_at %></td>
+          <td><%= post.start_at.strftime('%Y年 %m月 %d日') %></td>
+          <td><%= post.end_at.strftime('%Y年 %m月 %d日') %></td>
           <td class="maru">
             <% if post.is_all_day == "true" %>
               ○

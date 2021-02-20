@@ -8,7 +8,10 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = Post.new(params.require(:post).permit(:post_title, :start_at, :end_at, :is_all_day, :post_memo))
+    @post = Post.new(
+      params.require(:post).permit(:post_title, :start_at, :end_at, :is_all_day, :post_memo)
+      )
+      # binding.pry
     if @post.save
       flash[:notice] = "スケジュールを登録しました"
       redirect_to("/posts/index")
