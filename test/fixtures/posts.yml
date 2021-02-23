@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_title: MyString
+  start_at: 2021-02-19
+  end_at: 2021-02-19
+  is_all_day: MyString
+
+two:
+  post_title: MyString
+  start_at: 2021-02-19
+  end_at: 2021-02-19
+  is_all_day: MyString
