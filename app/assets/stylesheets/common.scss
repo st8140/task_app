@@ -9,8 +9,17 @@ table td {
 }
 
 .notice {
-    background-color: #ccf;
-    padding: 5px;
+    background-color: #dbffb7;
+    border: solid 2px #7fff7f;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.error {
+    background-color: #ff9e9e;
+    border: solid 2px #ff8484;
 }
 
 .check {

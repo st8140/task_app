@@ -1,6 +1,6 @@
 <div class="main-container">
   
-  <h2>スケジュール新規作成</h2>
+  <h2 id="edit-title">スケジュール編集</h2>
   
   <%= render "shared/error_message" %>
   
@@ -30,9 +30,10 @@
     </table>
     <div>
       <ul>
-        <li><%= f.submit "スケジュールを新規登録する" %></li>
+        <li><%= f.submit "スケジュールの編集を完了する" %></li>
         <li><%= link_to "スケジュール一覧に戻る", :posts %></li>
       </ul>
     </div>
   <% end %>
 </div>
+

@@ -56,3 +56,13 @@ a {
 .link + .link {
   margin-top: 5px;
 }
+
+.error_message {
+  text-align: left;
+  margin: 16px 0;
+  padding-left: 40px;
+}
+
+.error_message li {
+  padding: 5px 0;
+}

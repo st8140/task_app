@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    render :layout => 'index'
   end
   
   def new
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
       flash[:notice] = "スケジュールを登録しました"
       redirect_to("/posts/index")
     else
+      flash[:notice] = "スケジュールを登録できませんでした"
       render ("posts/new")
     end
   end
@@ -30,11 +32,11 @@ class PostsController < ApplicationController
   
   def update
     @post = Post.find(params[:id])
-    if @post.update(params.require(:post_title, :start_at, :end_at, :is_all_day, :post_memo))
+    if @post.update(params.require(:post).permit(:post_title, :start_at, :end_at, :is_all_day, :post_memo))
       flash[:notice] = "スケジュールを更新しました"
       redirect_to ("/posts/index")
     else
-      flash[:notice] = スケジュールを更新できませんでした
+      flash[:notice] = "スケジュールを更新できませんでした"
       render ("posts/edit")
     end
   end
